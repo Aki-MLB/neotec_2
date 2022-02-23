@@ -65,9 +65,9 @@ $(function(){
 		if(curPos > 80){
 			$('#mainnav').addClass('changeNav');
 		}
-		//else{
-			//$('#mainnav').removeClass('changeNav');
-		//}
+		else{
+			$('#mainnav').removeClass('changeNav');
+		}
 	});
 
 

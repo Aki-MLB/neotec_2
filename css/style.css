@@ -380,7 +380,7 @@ section h3{
   	width: 18px;
   	height: 2px;
   	margin: -1px 0 0 -7px;
-  	background: #fff;
+  	background: rgb(0, 0, 0);
   	transition: .2s;
 	}
 
@@ -392,7 +392,7 @@ section h3{
   	left: 0;
   	width: 18px;
   	height: 2px;
-  	background: #fff;
+  	background: rgb(0, 0, 0);
   	transition: .3s;
 	}
 
@@ -491,9 +491,17 @@ section h3{
 
 /*追加社長挨拶*/
 .intro{
-	margin: 20px 220px;
+	padding: 20px 220px;
 }
-
+@media screen and (max-width: 959px) {
+	.intro{
+		padding: 15px 140px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.intro{
+		padding: 50px 50px;
+	}}
 /*追加フォーム*/
 .Form {
 	margin-top: 140px;
