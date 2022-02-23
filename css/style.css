@@ -506,6 +506,15 @@ section h3{
 .support{
 	padding: 200px 220px;	
 }
+@media screen and (max-width: 959px) {
+	.intro{
+		padding: 15px 140px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.intro{
+		padding: 50px 50px;
+	}}
 .support h2{
 	font-size: large;
 }
