@@ -502,6 +502,13 @@ section h3{
 	.intro{
 		padding: 50px 50px;
 	}}
+/*追加サポート*/
+.support{
+	padding: 200px 220px;	
+}
+.support h2{
+	font-size: large;
+}
 /*追加フォーム*/
 .Form {
 	margin-top: 140px;
