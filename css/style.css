@@ -507,12 +507,12 @@ section h3{
 	padding: 200px 220px;	
 }
 @media screen and (max-width: 959px) {
-	.intro{
+	.support{
 		padding: 15px 140px;
 	}
 }
 @media screen and (max-width: 480px) {
-	.intro{
+	.support{
 		padding: 50px 50px;
 	}}
 .support h2{
