@@ -1,0 +1,918 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	color: #000;
+	background: rgb(255, 255, 255);
+}
+
+a{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+a:hover, .active{
+  text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+#header{
+	position: relative;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+}
+
+#header img{
+	height: 100vh; /* 全画面表示 */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#slogan{
+	position: absolute;
+  top: 50%;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+}
+
+
+#slogan h1{
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 20px;
+	font-weight:normal;
+}
+
+#slogan h2{
+	font-size: 20px;
+	font-weight:normal;
+}
+#slogan h3{
+	font-size: 25px;
+	font-weight:normal;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+}
+
+
+/* フッター
+------------------------------------------------------------*/
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1, h2{
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{clear:both;}
+
+section h2{
+	font-size: 22px;
+	font-weight:normal;
+	text-align: center;
+}
+section h3{
+	font-size: 22px;
+	font-weight:normal;
+	text-align: center;
+	padding-bottom: 22px;
+}
+
+.inner{
+	width: 94%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.col2 li{
+	display: inline-block;
+	width: 100%;
+  	margin: 20px 0 20px 0;
+}
+
+
+/* SEC01
+------------------------------------------------------------*/
+
+.vision{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	text-align: center;
+	font-size: 120%;
+}
+
+
+/* SEC02
+------------------------------------------------------------*/
+.wrap{
+	clear: both;
+	width: 100%;
+	background: #f6f6f6;
+	font-size: 120%;
+}
+
+.bg{
+	line-height: 0;
+}
+
+.txt h2{
+	padding: 0 0 20px !important;
+	font-size: 120%;
+}
+
+
+/* SEC03
+------------------------------------------------------------*/
+.col3 li{
+	margin-bottom: 50px;
+}
+
+.col3 img{
+	max-width: 288px;
+	display: block;
+	margin: -5px auto 20px;
+}
+
+
+/* SEC04
+------------------------------------------------------------*/
+#sec04{
+	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	color: #fff;
+}
+
+
+/* SEC05
+------------------------------------------------------------*/
+#sec05{
+	padding-top: 50px;
+}
+
+#sec05 dl{
+	line-height: 1.2;
+}
+
+#sec05 dt{
+	clear: left;
+	float: left;
+	display: block;
+	width: 30%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	text-align: right;
+	line-height: 1.6em;
+}
+
+#sec05 dd{
+	width: 60%;
+	float: left;
+	text-align: left;
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+
+#sec05 header{
+	display: none;
+}
+
+#map{
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+
+#map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	border: 0;
+}
+
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px){
+	.inner{
+		width: 1024px;
+		padding-bottom: 120px;
+	}
+	section h2{
+		padding: 70px 0 20px;
+	}
+	.txt h2{
+		padding: 0 0 20px !important;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	body{
+		font-size:14px;
+	}
+	
+  a#menu{
+		display:none;
+	}	
+
+	.panel{
+		display:block !important;
+	}
+
+	#mainnav{
+		position:fixed;
+		top: 0;
+		width:100%;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	#mainnav li{
+		display: inline-block;
+		padding: 22px 10px 20px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	
+	#mainnav a{
+		color: #000;
+	}
+	
+	#mainnav.changeNav{
+		background: rgba(255,255,255,.9);
+		border-bottom: 1px solid #d1d1d1;
+	}
+	
+	#mainnav.changeNav li{
+		padding: 20px 10px;
+	}
+
+	/* SEC02 MESSAGE
+	-----------------*/
+	.txt, .bg{
+		width: 50%;
+		float: left;
+		display: table;
+		background: #f6f6f6;
+	}
+
+	#sec02_02 .txt, #sec02_02 .bg{
+		float: right;
+	}
+
+	.vMid{
+		display: table-cell;
+		padding: 0 100px;
+		vertical-align: middle;
+	}
+	
+	/* SEC03 SERVICE MESSAGE STORY
+	-----------------*/
+	.col3{
+		text-align: center;
+	}
+
+	.col3 li{
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
+	
+	/* SEC05 PROFILE
+	-----------------*/
+	#sec05{
+		padding-top: 120px;
+	}
+	
+  #footer{
+		padding: 30px 10px 70px 0;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.col2 li{
+		width: 40%;
+		padding: 0 3%;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	#map iframe{
+	  width: 96% !important;
+		left: 2%;
+	}
+}
+
+@media only screen and (max-width: 799px){
+	#slogan h1{
+		font-size: 31px;
+	}
+
+	#slogan h2{
+		font-size: 16px;
+	}
+
+  a#menu{
+  	display: inline-block;
+  	position: relative;
+  	width: 40px;
+  	height: 40px;
+  	margin: 10px;
+	}
+
+	#menuBtn{
+  	display: block;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	width: 18px;
+  	height: 2px;
+  	margin: -1px 0 0 -7px;
+  	background: #fff;
+  	transition: .2s;
+	}
+
+	#menuBtn:before, #menuBtn:after{
+  	display: block;
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	width: 18px;
+  	height: 2px;
+  	background: #fff;
+  	transition: .3s;
+	}
+
+	#menuBtn:before{
+  	margin-top: -7px;
+	}
+
+	#menuBtn:after{
+  	margin-top: 5px;
+	}
+
+	a#menu .close{
+  	background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+  	margin-top: 0;
+	}
+
+	a#menu .close:before{
+  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+	}
+
+	.panel{
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	#mainnav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		text-align: right;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
+	}
+
+	#mainnav li a{
+		position: relative;
+		display:block;
+		padding:15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #000;
+		font-weight: 400;
+	}
+
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #000;
+		border-right: solid 2px #000;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.col3 li{
+		margin: 0 auto;
+		display: block;
+	max-width: 288px;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	section h2{
+		padding: 50px 0 20px 0;
+	}
+	#sec01 h2{
+		padding: 70px 0 20px;
+	}
+	.vMid{
+		padding: 0 20px;
+	}
+}
+
+/*追加社長挨拶*/
+.intro{
+	margin: 20px 220px;
+}
+
+/*追加フォーム*/
+.Form {
+	margin-top: 140px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form {
+	margin-top: 40px;
+	}
+	}
+	.Form-Item {
+	border-top: 1px solid #ddd;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item {
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	flex-wrap: wrap;
+	}
+	}
+	.Form-Item:nth-child(5) {
+	border-bottom: 1px solid #ddd;
+	}
+	.Form-Item-Label {
+	width: 100%;
+	max-width: 248px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+	font-size: 18px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item-Label {
+	max-width: inherit;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	}
+	}
+	.Form-Item-Label.isMsg {
+	margin-top: 8px;
+	margin-bottom: auto;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item-Label.isMsg {
+	margin-top: 0;
+	}
+	}
+	.Form-Item-Label-Required {
+	border-radius: 6px;
+	margin-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 48px;
+	display: inline-block;
+	text-align: center;
+	background: #5bc8ac;
+	color: #fff;
+	font-size: 14px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item-Label-Required {
+	border-radius: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 32px;
+	font-size: 10px;
+	}
+	}
+	.Form-Item-Input {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 48px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item-Input {
+	margin-left: 0;
+	margin-top: 18px;
+	height: 40px;
+	flex: inherit;
+	font-size: 15px;
+	}
+	}
+	.Form-Item-Textarea {
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 216px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	background: #eaedf2;
+	font-size: 18px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Item-Textarea {
+	margin-top: 18px;
+	margin-left: 0;
+	height: 200px;
+	flex: inherit;
+	font-size: 15px;
+	}
+	}
+	.Form-Btn {
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #5bc8ac;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	}
+	@media screen and (max-width: 480px) {
+	.Form-Btn {
+	margin-top: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 160px;
+	font-size: 16px;
+	}
+	}
+	
+/*追加カード*/
+.card-container{
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+}
+.card-container a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-text{
+    width:100%;
+    margin: 10px 20px;
+}
+.card-text h2{
+    padding-top: 10px;
+    font-size: 1em;
+}
+.card-text p{
+    font-size: 0.6em;
+}
+.card-img{
+    width: 80%;
+	margin : 0 auto;
+}
+
+img{
+    width:100%;
+    height:100%;
+    vertical-align:bottom;
+}
+
+/*PCサイズ*/
+
+@media screen and (min-width:650px) {
+    .card-container{
+		padding-top: 100px;
+        max-width: 1200px;
+    }
+
+    .card-text h2{
+        font-size: 1.3em;
+    }
+    .card-text p{
+        font-size: 1em;
+    }
+}
+
+/*QandA*/
+.cp_qa{
+	padding-top: 100px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #1b2538;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	font-weight: bold;
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 2.5em;
+	cursor: pointer;
+	text-indent: 1em;
+	border-radius: 0.5em;
+	background: rgba(27,37,56,0.1);
+}
+.cp_qa .cp_actab label::before {
+	font-family: serif;
+	font-size: 1.5em;
+	margin-left: -2em;
+	padding-right: 0.5em;
+	content: 'Q';
+}
+.cp_qa .cp_actab label:hover {
+	transition: all 0.3s;
+	color: #00838f;
+}
+/* --質問の＋アイコン */
+.cp_qa .cp_actab label::after {
+	font-size: 1.7em;
+	font-weight: bold;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: 'b';
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+	-webkit-transition: transform 0.4s;
+	        transition: transform 0.4s;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	padding: 0 0 0 2.5em;
+	-webkit-transition: max-height 0.2s;
+	        transition: max-height 0.2s;
+	border-radius: 0 0 0.5em 0.5em;
+}
+.cp_qa .cp_actab .cp_actab-content::before {
+	font-family: serif;
+	font-size: 1.5em;
+	position: absolute;
+	margin: 0.4em 0 0 -1em;
+	padding: 0;
+	content: 'A';
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em 1em 1em 0;
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+	border: 10px solid rgba(27,37,56,0.1);
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #00838f;
+	border-radius: 0.5em 0.5em 0 0;
+}
+/* 質問をクリックした時の+の動き */
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+/*2階層目以降は横並びにしない。ヘッダーアニメーション*/
+nav ul ul{
+	display: block;
+}
+
+/*下の階層のulや矢印の基点にするためliにrelativeを指定*/
+nav ul li{
+	position: relative;
+}
+
+/*ナビゲーションのリンク設定*/
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	color: #999;
+	padding:0px 0px;
+	transition:all .3s;
+}
+
+nav ul li li a{
+	padding:0px 0px;
+}
+
+nav ul li a:hover{
+	color:#fff;	
+}
+
+/*下の階層を持っているulの指定*/
+nav li.has-child ul{
+    /*絶対配置で位置を指定*/
+	position: absolute;
+	left:0;
+	top:66px;
+	z-index: 4;
+    /*形状を指定*/
+	background:#37b6da88;
+	width:180px;
+    /*はじめは非表示*/
+	visibility: hidden;
+	opacity: 0;
+    /*アニメーション設定*/
+	transition: all .3s;
+}
+
+/*hoverしたら表示*/
+nav li.has-child:hover > ul,
+nav li.has-child ul li:hover > ul,
+nav li.has-child:active > ul,
+nav li.has-child ul li:active > ul{
+  visibility: visible;
+  opacity: 1;
+}
+
+/*ナビゲーションaタグの形状*/
+nav li.has-child ul li a{
+	color: #fff;
+	border-bottom:solid 1px rgba(255,255,255,0.6);
+}
+
+nav li.has-child ul li:last-child a{
+	border-bottom:none;
+}
+
+nav li.has-child ul li a:hover,
+nav li.has-child ul li a:active{
+	background:#3577CA;
+}
+
+
+/*==3階層目*/
+
+/*3階層目の位置*/
+nav li.has-child ul ul{
+	top:0;
+	left:182px;
+	background:#66ADF5;
+}
+
+nav li.has-child ul ul li a:hover,
+nav li.has-child ul ul li a:active{
+	background:#448ED3;
+}
+
+
+/*==768px以下の形状*/
+
+@media screen and (max-width:768px){
+	nav{
+		padding: 0;
+	}
+	
+	nav ul{
+		display: block;
+	}
+	
+	nav li.has-child ul,
+	nav li.has-child ul ul{
+  	position: relative;
+	left:0;
+	top:0;
+	width:100%;
+	visibility:visible;/*JSで制御するため一旦表示*/
+	opacity:1;/*JSで制御するため一旦表示*/
+	display: none;/*JSのslidetoggleで表示させるため非表示に*/
+	transition:none;/*JSで制御するためCSSのアニメーションを切る*/
+}
+	
+nav ul li a{
+	border-bottom:1px solid #ccc;
+}
+
+/*矢印の位置と向き*/
+
+nav ul li.has-child::before{
+	left:20px;	
+}
+
+nav ul ul li.has-child::before{
+    transform: rotate(135deg);
+	left:20px;
+}
+    
+nav ul li.has-child.active::before{
+    transform: rotate(-45deg);
+}
+
+}

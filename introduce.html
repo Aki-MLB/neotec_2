@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="最新技術と自然との調和を目指す">
+<meta name="viewport" content="width=device-width">
+<title>株式会社ネオテック | W-ECOで時代を先取る会社へ</title>
+<link rel="stylesheet" media="all" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+
+<nav id="mainnav" class="changeNav">
+	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+	<div class="panel"></div>
+	<ul>
+		<li><a href="index.html">TOP</a></li>
+		<li><a href="introduct.html">業務案内</a></li>
+		<li class="has-child"><a href="tec.html">技術情報</a>
+			<ul>
+			<li><a href="tec_w_eco.html">w-eco</a></li>
+			<li><a href="tec_el.html">ELシステム</a></li>
+			<li><a href="tec_auto.html">自動昇降システム</a></li>
+
+		</ul>
+		</li>
+		<li><a href="#sec01">会社概要</a></li>
+		<li class="has-child"><a href="support.html">サポート</a>
+			<ul>
+			<li><a href="solve.html">運用上の注意、解決</a></li>
+			<li><a href="q_and_a.html">Q&A</a></li>
+		</ul>
+	</li>
+		<li><a href="form.html">お問い合わせ</a></li>
+	</ul>
+	</div>
+</nav>
+
+<div class="card-container">
+    <div class="card-img">
+        <a href="#"><img width="768" height="512" src="./images/2.png" alt="" /></a>
+    </div>
+</div>
+<div class="intro">
+ホームページをご覧いただき、誠にありがとうございます。<br>
+弊社は1984年に創業し、1990年に株式会社ネオテックへ社名変更しました。私の専門は建築設備ですが、計装設計、換気制御システム設計を得意としています。空調・換気設備においては、快適な空間を整えるために、設備設計がとても重要になります。お客様の大切な資産になる建築設備を一番に考え、将来に渡り安心してご利用していただけるよう、妥協を許さないシステムのご提案を心がけています。<br>
+<br>
+換気制御システムの開発に至った経緯を簡単に紹介しますと、初期のころは空調設備設計や負荷計算を数多く手がけていました。複数台のパッケージエアコンなどを一括で運転制御、温湿度制御を行うには、PLC（Program Logic Controller）は欠かせないものでした。当時、負荷は発生するものという認識が強く、エネルギー削減の領域は素通りしていました。<br>
+<br>
+余談ですが、パソコンが今のように一般的に出回っていない時代でしたので、ラダープログラムの入力は打ち込み器が主流でした。思い付きに任せ、A4の紙にラダーを手書きで書いては、セロテープで張り合わせ、フローチャートと見比べながら入力した日々を懐かしく思います。現在のＰＬＣはパソコン一つで手軽に開発できるようになっており、その進化にはとても驚いています。<br>
+<br>
+PLCとの出会いが一つの転機となり、建築設備とPLCの連携は不可欠だと考え、いくつか物件の設計を手掛ける際に導入の機会を得ました。<br>
+<br>
+今日のw-ecoの元になったのが、遊技場の換気制御システムです。当時、ホールでの喫煙があたりまえでしたので、喫煙時に換気を最大限稼働させる必要がありました。しかし、CO2センサーでは喫煙の状況を知ることができないため、悩んだ結果、タバコの煙に反応する雑ガスセンサーとCO2センサーを併用する換気制御システムを開発しました。<br>
+<br>
+まだこの時には換気を制御するだけであり、外気負荷抑制については気づいていませんでした。<br>
+<br>
+ある日、建築設計会社の社長が弊社に立ち寄り、「PLCを設備に利用するメリットは何か」と、問われました。私は、「PLCで換気制御システムを構築すれば、外気負荷抑制とエネルギーの見える化が果たせる」と回答したことから、ホームセンターへの導入の足掛かりを得ることができました。<br>
+<br>
+とはいうものの、提案に至るまでのデータが手元になく、外気負荷エネルギーの削減効果試算を準備するには相当な時間がかかりました。<br>
+<br>
+ここでいう外気負荷とは、法定換気や建築物衛生法で算出した換気量を元に、負荷計算で求められる屋外の熱負荷です。外気負荷は連続的な換気によるものなので、その換気を制御して換気量を抑えることで間違いなく外気負荷は減ります。その結果、空調機（エアコン等）の熱源エネルギーの消費を抑えることができ、間接的に電力量やガス消費量が削減できます<br>
+。さらに、削減したエネルギーをリアルタイムで確認できる機能も追加しました。<br>
+<br>
+換気量を制御するにあたり、考えたことは、何をもって換気を制御するかです。<br>
+一般的にCO2濃度が一定値を超えなければよいとされていますが、遊技場の設計時に得た経験から、<br>
+雑ガスセンサーとCO2センサーの併用が良策であると考えました。<br>
+<br>
+CO2以外の目に見えないガスは、臭気として判別できるものもあれば、無臭であるが人体の健康を害するガスもあります。<br>
+これらのガス成分を雑ガスセンサーで検知し、換気制御に利用することで、より快適な空間を維持できるのです。<br>
+こうして、『外気負荷抑制とエネルギーの見える化』を実現したELシステムが誕生しました。初めて導入されてから約5年が経過し、<br>
+蓄積されたPLCの稼動データを解析することで、ELシステムはエネルギー抑制に大きな効果をもたらすことが証明されました。<br>
+<br>
+私が建築設備と出会い、ようやく今年で50年。お客様に喜んでもらうため、<br>
+換気制御で無駄なエネルギーを削減できることをもっと広めたい、ＥＬシステムをもっと世に送り出したいと考えています。<br>
+<br>
+50年の過程で得た私の経験を通じて、当ホームページにお越しいただいた方々に、少しでもお役立ちいただければ幸いです。<br>
+</div>
+<section id="sec05">
+	<header>
+		<h2>PROFILE</h2>
+	</header>
+	<div class="inner">
+		<ul class="col2">
+			<li>
+				<dl>
+					<dt>社名</dt>
+					<dd>株式会社ネオテック</dd>
+					<dt>代表取締役</dt>
+					<dd>野網　一</dd>
+					<dt>住所</dt>
+					<dd>大阪府大阪市阿倍野区阪南町3-8-26</dd>
+					<dt>電話番号</dt>
+					<dd>06-6627-2516</dd>
+					<dt>設立</dt>
+					<dd>1984年7月</dd>
+					<dt>資本金</dt>
+					<dd>1000万円</dd>
+					<dt>主な取引先</dt>
+					<dd><p><a href="#" target="_blank">ビバホーム</a></p><p><a href="#" target="_blank">なんたら</a></p><p><a href="#" target="_blank">なんたら</a></p></dd>
+				</dl>
+			</li>
+			<li>
+				<div id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9802178944215!2d135.51255191503515!3d34.62994019451267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddc5225c15a7%3A0x90684f40ffe1eb90!2z44CSNTQ1LTAwMjEg5aSn6Ziq5bqc5aSn6Ziq5biC6Zi_5YCN6YeO5Yy66Ziq5Y2X55S677yT5LiB55uu77yY4oiS77yS77yW!5e0!3m2!1sja!2sjp!4v1644461666433!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>					<!-- // GOOGLE MAP -->
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<footer id="footer">
+	Copyright(c) 2022 株式会社ネオテック All Rights Reserved. 
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/5-1-1.js"></script>
+</body>
+</html>
