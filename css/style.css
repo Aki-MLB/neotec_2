@@ -45,7 +45,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 }
 
 #header img{
-	height: 100vh; /* 全画面表示 */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -140,7 +139,7 @@ section h3{
 ------------------------------------------------------------*/
 
 .vision{
-	width: 94%;
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 80px;
 	text-align: center;
@@ -152,7 +151,7 @@ section h3{
 ------------------------------------------------------------*/
 .wrap{
 	clear: both;
-	width: 95%;
+	width: 90%;
 	background: #f6f6f6;
 	font-size: 120%;
 	margin: auto;
@@ -166,7 +165,15 @@ section h3{
 	padding: 0 0 20px !important;
 	font-size: 120%;
 }
-
+.vision2{
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	font-size: 120%;
+	color:#ffffff;
+	background: #ffffff;
+}
 
 /* SEC03
 ------------------------------------------------------------*/
