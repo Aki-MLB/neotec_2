@@ -165,7 +165,7 @@ section h3{
 	padding: 0 0 20px !important;
 	font-size: 120%;
 }
-.vision2{
+.line01{
 	width: 95%;
 	margin: 0 auto;
 	padding: 20px;
@@ -518,7 +518,7 @@ section h3{
 	}}
 /*追加サポート*/
 .support{
-	padding: 200px 220px;	
+	padding: 220px 200px 100px 200px;	
 }
 @media screen and (max-width: 959px) {
 	.support{
