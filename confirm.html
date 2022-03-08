@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="最新技術と自然との調和を目指す">
+<meta name="viewport" content="width=device-width">
+<title>株式会社ネオテック | w-ecoで時代を先取る会社へ</title>
+<link rel="stylesheet" media="all" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+
+	<nav id="mainnav" class="changeNav">
+		<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+		<div class="panel">
+		<ul>
+			<li><a href="index.html">TOP</a></li>
+			<li><a href="introduct.html">業務案内</a></li>
+			<li><a href="tec.html">製品情報</a></li>
+			<li><a href="introduce.html">会社概要</a></li>
+			<li><a href="skill.html">技術情報</a></li>
+			<li><a href="support.html">サポート</a></li>
+			<li><a href="#sec01">お問い合わせ</a></li>
+		</ul>
+		</div>
+	</nav>
+
+	<div class="doc">
+	</div>
+	<div class="Form">
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="confirm">
+<table class="ta1">
+<!--<tr><td colspan="2" class="auto"><strong>確認画面</strong></td></tr>-->
+<!-- 入力／確認 -->
+<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+<div class="Form-Item">
+	<p class="Form-Item-Label">会社名</p>
+	<input type="hidden" name="item1" value="<?php echo $form["item1"];?>">
+	<?php echo $form["item1"];?>
+</div>
+  <div class="Form-Item">
+	<p class="Form-Item-Label">氏名</p>
+	<input type="hidden" name="item2" value="<?php echo $form["item1"];?>">
+	<?php echo $form["item2"];?>
+</div>
+  <div class="Form-Item">
+	<p class="Form-Item-Label">電話番号</p>
+	<input type="hidden" name="item3" value="<?php echo $form["item1"];?>">
+	<?php echo $form["item3"];?>
+</div>
+  <div class="Form-Item">
+	<p class="Form-Item-Label">メールアドレス</p>
+	<input type="hidden" name="item4" value="<?php echo $form["item1"];?>">
+	<?php echo $form["item4"];?>
+</div>
+  <div class="Form-Item">
+	<p class="Form-Item-Label isMsg">お問い合わせ内容</p>
+	<input type="hidden" name="item5" value="<?php echo $form["item3"]; ?>">
+	<?php echo nl2br($form["item5"]);?>
+</div>
+<div class="c">
+<input type="submit" value="送信する" class="Form-Btn">
+&nbsp;
+<input type="button" value="戻る" onClick="document.form1.mode.value='reinput';document.form1.submit()" class="Form-Btn">
+</div>
+</form>
+</div>
+<!-- フォームの情報はここまでです -->
+<footer id="footer">
+	Copyright(c) 2022 株式会社ネオテック All Rights Reserved. 
+	</footer>
+	</body>
+	</html>

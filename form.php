@@ -1,10 +1,10 @@
 <?php 
 error_reporting (E_ALL & ~E_NOTICE & ~E_WARNING & ~E_STRICT & ~E_DEPRECATED);
 //
-$mail_sys = "mr.littlebrave@gmail.com";
+$mail_sys = "info@neotec.co.jp";
 $from_name = "お問い合わせ詳細";
-$from_mail = "mr.littlebrave@gmail.com";
-$user_mail = "item2";
+$from_mail = "info@neotec.co.jp";
+$user_mail = "item3";
 //---
 $title = "お問い合わせフォーム";
 $subject = "メールを送信しました。\n";
@@ -14,8 +14,8 @@ $body = "
 $subject_sys = "お問い合わせがありました\n";
 $body_sys = "\n";
 $footer = "\n------------
-ミスターリトルブレイブ
-https://www.mrlittlebrave.com/
+株式会社ネオテック
+https://neotec.co.jp
 ------------
 ";
 //------------------------------------------------
@@ -47,7 +47,7 @@ define("MAIL_ENCODING", "JIS");
 
 //
 if (!$form_html) {
-	$form_html = "form.html";		// 入力フォームのファイル名
+	$form_html = "form_2.html";		// 入力フォームのファイル名
 }
 if (!$confirm_html) {
 	$confirm_html = "confirm.html";		// 確認画面のファイル名
@@ -73,8 +73,8 @@ if (!$body_sys) {
 // メール本文後ろ（改行に注意）
 if (!$footer) {
 	$footer = "\n------------
-ミスターリトルブレイブ
-https://www.mrlittlebrave.com/
+	株式会社ネオテック
+	https://neotec.co.jp
 ------------
 ";
 }
