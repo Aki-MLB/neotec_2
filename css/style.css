@@ -35,8 +35,7 @@ a:hover, .active{
 a:active, a:focus,input:active, input:focus{outline:0;}
 
 
-/* ヘッダー
-------------------------------------------------------------*/
+/* ヘッダー */
 #header{
 	position: relative;
     overflow:hidden;
@@ -81,8 +80,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 }
 
 
-/* フッター
-------------------------------------------------------------*/
+/* フッター */
 #footer{
 	clear: both;
 	padding: 50px 10px 50px 0;
@@ -91,8 +89,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 }
 
 
-/* 共通
-------------------------------------------------------------*/
+/* 共通設定 */
 h1, h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
 }
@@ -133,6 +130,13 @@ section h3{
 	width: 100%;
   	margin: 20px 0 20px 0;
 }
+
+.col4 li{
+	display: inline-block;
+	width: 100%;
+  	margin: 20px 0 20px 0;
+}
+
 
 
 /* SEC01
@@ -247,10 +251,6 @@ section h3{
 	border: 0;
 }
 
-
-/* RESPONSIVE 設定
-------------------------------------------------------------*/
-
 @media only screen and (min-width: 1200px){
 	.inner{
 		width: 1024px;
@@ -308,9 +308,6 @@ section h3{
 	#mainnav.changeNav li{
 		padding: 20px 10px;
 	}
-
-	/* SEC02 MESSAGE
-	-----------------*/
 	.txt, .bg{
 		width: 50%;
 		float: left;
@@ -328,8 +325,7 @@ section h3{
 		vertical-align: middle;
 	}
 	
-	/* SEC03 SERVICE MESSAGE STORY
-	-----------------*/
+	/*あゆみ*/
 	.col3{
 		text-align: center;
 	}
@@ -343,7 +339,7 @@ section h3{
 		text-align: left;
 	}
 	
-	/* SEC05 PROFILE
+	/* PROFILE
 	-----------------*/
 	#sec05{
 		padding-top: 120px;
@@ -360,12 +356,22 @@ section h3{
 		padding: 0 3%;
 		vertical-align: top;
 	}
+	.col4 li{
+		width: 40%;
+		padding: 0 30%;
+		vertical-align: top;
+	}
 }
-
+	.cen_img{
+		padding:0 20%;
+	}
 @media only screen and (max-width: 640px){
 	#map iframe{
 	  width: 96% !important;
 		left: 2%;
+	}
+	.cen_img{
+		padding:0 0;
 	}
 }
 
@@ -378,6 +384,9 @@ section h3{
 		font-size: 16px;
 	}
 
+	.cen_img{
+		padding:0 5%;
+	}
   a#menu{
   	display: inline-block;
   	position: relative;
@@ -503,7 +512,7 @@ section h3{
 	}
 }
 
-/*追加社長挨拶*/
+/*社長挨拶*/
 .intro{
 	padding: 20px 220px;
 }
@@ -516,7 +525,7 @@ section h3{
 	.intro{
 		padding: 50px 50px;
 	}}
-/*追加サポート*/
+/*サポート*/
 .support{
 	padding: 220px 200px 100px 200px;	
 }
@@ -532,7 +541,7 @@ section h3{
 .support h2{
 	font-size: large;
 }
-/*追加フォーム*/
+/*フォーム*/
 .Form {
 	margin-top: 140px;
 	margin-left: auto;
@@ -678,7 +687,7 @@ section h3{
 	}
 	}
 	
-/*追加カード*/
+/*カード*/
 .card-container{
     color: rgb(0, 0, 0);
     display: flex;
@@ -711,8 +720,6 @@ img{
     height:100%;
     vertical-align:bottom;
 }
-
-/*PCサイズ*/
 
 @media screen and (min-width:650px) {
     .card-container{
@@ -777,7 +784,7 @@ img{
 	transition: all 0.3s;
 	color: #00838f;
 }
-/* --質問の＋アイコン */
+/* 質問＋アイコン */
 .cp_qa .cp_actab label::after {
 	font-size: 1.7em;
 	font-weight: bold;
@@ -814,34 +821,29 @@ img{
 	margin: 1em 1em 1em 0;
 }
 /* 質問を開いた時の仕様 */
-/* --答えの高さ */
 .cp_qa .cp_actab input:checked ~ .cp_actab-content {
 	max-height: 40em;
 	border: 10px solid rgba(27,37,56,0.1);
 }
-/* 質問をクリックした時のアイコンの動き */
+
 .cp_qa .cp_actab input:checked ~ label {
 	color: #00838f;
 	border-radius: 0.5em 0.5em 0 0;
 }
-/* 質問をクリックした時の+の動き */
+
 .cp_qa .cp_actab input[type=checkbox]:checked + label::after {
 	-webkit-transform: rotateZ(45deg);
 	transform: rotateZ(45deg);
 	-webkit-transform-origin: 50% 50%;
 	transform-origin: 50% 50%;
 }
-/*2階層目以降は横並びにしない。ヘッダーアニメーション*/
-nav ul ul{
-	display: block;
-}
 
-/*下の階層のulや矢印の基点にするためliにrelativeを指定*/
+/*ナビメニュー*/
 nav ul li{
 	position: relative;
 }
 
-/*ナビゲーションのリンク設定*/
+/*ナビゲーションのリンク*/
 nav ul li a{
 	display: block;
 	text-decoration: none;
@@ -858,24 +860,20 @@ nav ul li a:hover{
 	color:#fff;	
 }
 
-/*下の階層を持っているulの指定*/
+/*下の階層を持ちul*/
 nav li.has-child ul{
-    /*絶対配置で位置を指定*/
 	position: absolute;
 	left:0;
 	top:66px;
 	z-index: 4;
-    /*形状を指定*/
 	background:#37b6da88;
 	width:180px;
-    /*はじめは非表示*/
 	visibility: hidden;
 	opacity: 0;
-    /*アニメーション設定*/
 	transition: all .3s;
 }
 
-/*hoverしたら表示*/
+/*表示アクション*/
 nav li.has-child:hover > ul,
 nav li.has-child ul li:hover > ul,
 nav li.has-child:active > ul,
@@ -884,7 +882,7 @@ nav li.has-child ul li:active > ul{
   opacity: 1;
 }
 
-/*ナビゲーションaタグの形状*/
+/*ナビゲーション*/
 nav li.has-child ul li a{
 	color: #fff;
 	border-bottom:solid 1px rgba(255,255,255,0.6);
@@ -898,22 +896,6 @@ nav li.has-child ul li a:hover,
 nav li.has-child ul li a:active{
 	background:#3577CA;
 }
-
-
-/*==3階層目*/
-
-/*3階層目の位置*/
-nav li.has-child ul ul{
-	top:0;
-	left:182px;
-	background:#66ADF5;
-}
-
-nav li.has-child ul ul li a:hover,
-nav li.has-child ul ul li a:active{
-	background:#448ED3;
-}
-
 
 /*==768px以下の形状*/
 
