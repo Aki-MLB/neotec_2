@@ -20,7 +20,7 @@ body{
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
-	background: rgb(255, 255, 255);
+	background: linear-gradient(to right, rgba(122, 228, 255, 0.795) 0%, #fff 2.5%, #fff 97.5%, rgb(122, 228, 255, 0.795)  100%);
 }
 
 a{
@@ -110,21 +110,25 @@ section h3{
 	font-size: 22px;
 	font-weight:normal;
 	text-align: center;
-	padding-bottom: 22px;
 }
 
 .inner{
-	width: 94%;
+	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 50px;
+	background-color:rgba(0, 0, 0, 0.315);
 }
 .inner2{
-	width: 94%;
+	width: 96%;
 	margin: 0 auto;
 	padding-bottom: 50px;
 	background: #f6f6f6b7;
 }
-
+.inner3{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
 .col2 li{
 	display: inline-block;
 	width: 100%;
@@ -137,6 +141,17 @@ section h3{
   	margin: 20px 0 20px 0;
 }
 
+.col5 li{
+	font-size: 80%;
+	display: inline-block;
+	width: 100%;
+  	margin: 0 auto;
+}
+.col6 li{
+	display: center;
+	width: 100%;
+  	margin: 20px 0 20px 0;
+}
 
 
 /* SEC01
@@ -160,6 +175,13 @@ section h3{
 	font-size: 120%;
 	margin: auto;
 }
+.wrap2{
+	clear: both;
+	width: 90%;
+	background: #f6f6f675;
+	font-size: 120%;
+	margin: auto;
+}
 
 .bg{
 	line-height: 0;
@@ -169,10 +191,20 @@ section h3{
 	padding: 0 0 20px !important;
 	font-size: 120%;
 }
+
 .line01{
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	padding: 20px;
+	text-align: center;
+	font-size: 120%;
+	color:#ffffff;
+	background: #ffffff;
+}
+.line02{
+	width: 90%;
+	margin: 0 auto;
+	padding: 5px;
 	text-align: center;
 	font-size: 120%;
 	color:#ffffff;
@@ -195,7 +227,7 @@ section h3{
 /* SEC04
 ------------------------------------------------------------*/
 #sec04{
-	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+	background: url(../images/8.jpg) no-repeat 100% 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	color: #fff;
@@ -260,6 +292,12 @@ section h3{
 		padding: 70px 0 20px;
 	}
 	.txt h2{
+		padding: 0 0 20px !important;
+	}
+	section h3{
+		padding: 20px 0 20px;
+	}
+	.txt h3{
 		padding: 0 0 20px !important;
 	}
 }
@@ -346,7 +384,8 @@ section h3{
 	}
 	
   #footer{
-		padding: 30px 10px 70px 0;
+		padding: 30px 10px 40px 0;
+		background-color:rgba(255, 250, 240, 0.404);
 	}
 }
 
@@ -359,6 +398,12 @@ section h3{
 	.col4 li{
 		width: 40%;
 		padding: 0 30%;
+		vertical-align: top;
+	}
+	.col5 li{
+		font-size:80%;
+		width: 40%;
+		padding: 0 4%;
 		vertical-align: top;
 	}
 }
@@ -511,7 +556,19 @@ section h3{
 		padding: 0 20px;
 	}
 }
-
+/*ボックス*/
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
 /*社長挨拶*/
 .intro{
 	padding: 20px 220px;
@@ -525,13 +582,114 @@ section h3{
 	.intro{
 		padding: 50px 50px;
 	}}
+/*tec*/
+	.tec{
+		font-size: 150%;
+		padding: 100px 150px 100px 150px;	
+	}
+	.tec1{
+		font-size: 150%;
+		padding: 30px 450px 30px 450px;	
+	}
+	.tec h1:first-letter {
+		padding-left: 50px;
+		font-size: 2em;
+		color: #7172ac;
+	}
+	
+	@media screen and (max-width: 1200px) {
+
+		.tec1{
+			padding: 50px 380px;
+		}
+	}
+	@media screen and (max-width: 1050px) {
+
+		.tec1{
+			padding: 50px 300px;
+		}
+	}
+	@media screen and (max-width: 959px) {
+		.tec{
+			padding: 50px 80px;
+		}
+		.tec1{
+			padding: 50px 240px;
+		}
+		.tec h1:first-letter {
+			padding-left: 50px;
+			font-size: 1.5em;
+			color: #7172ac;
+		}
+	}
+	@media screen and (max-width: 750px) {
+
+		.tec1{
+			padding: 30px 180px;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.tec{
+			padding: 50px 50px;
+		}
+		.tec1{
+			padding: 20px 100px;
+		}
+		.tec h1:first-letter {
+			padding-left: 50px;
+			font-size: 1.2em;
+			color: #7172ac;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.tec{
+			padding: 50px 50px;
+		}
+		.tec1{
+			padding: 20px 50px;
+		}	
+		.tec h1:first-letter {
+			padding-left: 50px;
+			font-size: 1em;
+			color: #7172ac;
+		}
+	}
+	.tec h2{
+		font-size: large;
+	}
+/*イントロダクト*/
+.int{
+	font-size: 150%;
+	padding: 100px 150px 100px 150px;	
+}
+.int h1:first-letter {
+	padding-left: 50px;
+	font-size: 2em;
+	color: #ac71a4;
+}
+.int p{
+	font-size: 75%;
+}
+@media screen and (max-width: 959px) {
+	.int{
+		padding: 50px 140px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.int{
+		padding: 50px 50px;
+	}}
+.int h2{
+	font-size: large;
+}
+
 /*サポート*/
 .support{
-	padding: 220px 200px 100px 200px;	
+	padding: 220px 200px 100px 200px;
 }
 @media screen and (max-width: 959px) {
 	.support{
-		padding: 15px 140px;
+		padding: 50px 140px;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -741,10 +899,34 @@ img{
 
 /*QandA*/
 .cp_qa{
-	padding-top: 100px;
+	padding: 100px;
+	width: 95%;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
+.cp_qa h1 {
+  position: relative;
+  color: #898b15;
+  font-size: 20px;
+  padding: 7px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.cp_qa h1:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #ddbca6;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+  
 .cp_qa *:after, .cp_qa *:before {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
