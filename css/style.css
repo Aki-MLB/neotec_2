@@ -582,10 +582,14 @@ section h3{
 	.intro{
 		padding: 50px 50px;
 	}}
+/*ventilation*/
+	.ventilation{
+		padding: 100px 150px 100px 150px;	
+	}
 /*tec*/
 	.tec{
 		font-size: 150%;
-		padding: 100px 150px 100px 150px;	
+		padding: 100px 150px 100px 150px;
 	}
 	.tec1{
 		font-size: 150%;
@@ -844,7 +848,48 @@ section h3{
 	font-size: 16px;
 	}
 	}
-	
+/* 画像付きテーブル-------------------------------------*/
+
+   table.table01 tbody th {
+	background:#000;/* 見出しの背景色 */
+	color:#fff;/* 見出しの文字色 */
+	padding:10px 10px;/* 見出しの上下・左右の余白 */
+	border:#000 solid 1px;/* 見出しの罫線 */
+	vertical-align:center;/* 見出しの縦位置（中央寄せ） */
+   }
+
+   table.table01 tbody td.table01-img img{
+	width:100%;
+	height:auto;
+   }
+
+   table.table01 tbody td.table01-tex{
+	width:40%;/* 画像の横幅値 */
+   }
+   
+   table.table01 tbody td {
+	background:#fff;/* 文章セルの背景色 */
+	padding:0px 15px;/* 文章セルの上下・左右の余白 */
+	vertical-align:top;/* 文章セルの縦位置（中央寄せ） */
+   }
+   
+   /* テーブルのレスポンシブデザイン */
+   
+   @media screen and (max-width: 780px) {
+   table.table01 tbody th {
+	display:block;/* ブロック要素にしてセルの幅を100％にする */
+	padding:5px;
+   }
+   table.table01 tbody td.table01-img{
+	padding:0px;
+   }
+   table.table01 tbody td.table01-tex{
+	width:92%;/* 画像の横幅値 */
+   }
+   table.table01 tbody td {
+	display:block;
+   }
+   }
 /*カード*/
 .card-container{
     color: rgb(0, 0, 0);
