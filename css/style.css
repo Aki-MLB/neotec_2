@@ -227,9 +227,10 @@ section h3{
 /* SEC04
 ------------------------------------------------------------*/
 #sec04{
-	background: url(../images/8.jpg) no-repeat 100% 100% fixed;
+	background: url(../images/sakura.png) no-repeat 100% 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
+	opacity: 0.8;
 	color: #fff;
 }
 
@@ -585,6 +586,25 @@ section h3{
 /*ventilation*/
 	.ventilation{
 		padding: 100px 150px 100px 150px;	
+		text-align: center;
+	}
+	.ventilation2{
+		padding: 100px 150px 100px 150px;	
+		text-align: left;
+		font-size : 83%
+	}
+	.ventilation2 img {
+		width: 100%;
+		height: auto;
+	}
+	.ventilation2 .mini img{
+		width: 50%;
+		height: auto;
+	}
+	.ventilation2 .minimum img{
+		width: 10%;
+		height: auto;
+		margin:0;
 	}
 /*tec*/
 	.tec{
@@ -849,6 +869,14 @@ section h3{
 	}
 	}
 /* 画像付きテーブル-------------------------------------*/
+.table01{
+	margin: 100px 0 100px 50px;
+}
+
+table.table01 tbody{
+	padding:10px 10px;/* 見出しの上下・左右の余白 */
+	vertical-align:center;/* 見出しの縦位置（中央寄せ） */
+   }
 
    table.table01 tbody th {
 	background:#000;/* 見出しの背景色 */
@@ -860,22 +888,25 @@ section h3{
 
    table.table01 tbody td.table01-img img{
 	width:100%;
-	height:auto;
+	padding:auto;
    }
 
    table.table01 tbody td.table01-tex{
-	width:40%;/* 画像の横幅値 */
+	width:40%;
    }
    
    table.table01 tbody td {
 	background:#fff;/* 文章セルの背景色 */
-	padding:0px 15px;/* 文章セルの上下・左右の余白 */
-	vertical-align:top;/* 文章セルの縦位置（中央寄せ） */
+	padding:0px 30px;/* 文章セルの上下・左右の余白 */
+	vertical-align:center;/* 文章セルの縦位置（中央寄せ） */
    }
    
    /* テーブルのレスポンシブデザイン */
    
    @media screen and (max-width: 780px) {
+	.table01{
+		margin: 10px auto;
+	}
    table.table01 tbody th {
 	display:block;/* ブロック要素にしてセルの幅を100％にする */
 	padding:5px;
