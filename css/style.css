@@ -610,6 +610,14 @@ section h3{
 		height: auto;
 		margin:0;
 	}
+	@media screen and (max-width: 800px) {
+		.ventilation{
+			padding: 10px 10px;
+		}
+		.ventilation2{
+			padding: 20px 20px;
+		}
+	}
 /*tec*/
 	.tec{
 		font-size: 150%;
