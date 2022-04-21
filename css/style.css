@@ -301,6 +301,7 @@ section h3{
 	.txt h3{
 		padding: 0 0 20px !important;
 	}
+	
 }
 
 @media only screen and (min-width: 800px){
@@ -418,6 +419,12 @@ section h3{
 	}
 	.cen_img{
 		padding:0 0;
+	}
+	#slogan h3{
+		font-size: 10px;
+		font-weight:normal;
+		letter-spacing: 0.05em;
+		line-height: 1.5;
 	}
 }
 
