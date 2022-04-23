@@ -4,7 +4,7 @@ error_reporting (E_ALL & ~E_NOTICE & ~E_WARNING & ~E_STRICT & ~E_DEPRECATED);
 $mail_sys = "info@neotec.co.jp";
 $from_name = "お問い合わせ詳細";
 $from_mail = "info@neotec.co.jp";
-$user_mail = "item3";
+$user_mail = "item2";
 //---
 $title = "お問い合わせフォーム";
 $subject = "メールを送信しました。\n";
@@ -140,7 +140,6 @@ $form_input = array(
 	"item1" => array("title" => "お名前", "name" => "item1", "func" => "2", "require" => "1", "check" => "1",),
 	"item2" => array("title" => "メールアドレス", "name" => "item2", "func" => "2", "require" => "1", "check" => "3",),
 	"item3" => array("title" => "お問い合わせ内容", "name" => "item3", "func" => "7", "require" => "1", "check" => "1",),
-
 );
 // 入力値の取得
 $msg = array();
